@@ -1,0 +1,17 @@
+
+
+# Jupyter
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+
+# Python cache
+__pycache__/
+
+# Mac
+.DS_Store
