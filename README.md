@@ -4,5 +4,5 @@ ExoCore is a curriculum of open science for the field of exoplanets developed as
 
 ![image](https://github.com/AstroMusers/ExoCore/blob/main/ExoCore/Graphics/ExoCore_V2.png)
 
-Binder image of ExoCore:
+You can explore ExoCore using Binder. Clicking the button below will generate a Docker image of ExoCore on BinderHub. The initialization process will take about two minutes.
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/astromusers/exocore/HEAD)
