@@ -33,6 +33,7 @@ To help potential students decide if ExoCore is appropriate for their research g
 
 # Modules
 
+ExoCore is divided into **seven** modules that broadly categorizes lessons based on a particular aspect of exoplanet research.
 
 # Pre-curricular survey
 
