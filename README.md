@@ -33,7 +33,17 @@ To help potential students decide if ExoCore is appropriate for their research g
 
 # Modules
 
-ExoCore is divided into **seven** modules that broadly categorizes lessons based on a particular aspect of exoplanet research.
+ExoCore is divided into **seven** modules that categorizes lessons based on a particular aspect of exoplanet research. They include:
+
+* Databases
+* Data Repositories
+* Data Structures
+* Data Analysis and Modeling Software
+* Utility Software
+* Citizen Science
+* Exoplanet Resources and Collaborations
+
+Further information on module content and specific lessons can be found in the main [ExoCore](./ExoCore/ExoCore.ipynb) Jupyter notebook.
 
 # Pre-curricular survey
 
