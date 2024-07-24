@@ -1,6 +1,8 @@
 # ExoCore
 
-<img src="./ExoCore/Auxiliary_Files/Graphics/Main_Page/ExoCore_Logo.png" alt="ExoCore" class="center" width="500" style="display: block; margin: auto; " />
+<p align="center">
+  <img src="./ExoCore/Auxiliary_Files/Graphics/Main_Page/ExoCore_Logo.png" alt="ExoCore" width="500" />
+</p>
 
 
 # Introduction
