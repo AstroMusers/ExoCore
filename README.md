@@ -6,12 +6,14 @@
 
 
 # Introduction
+
 ExoCore is a curriculum of open science for the field of exoplanets developed as part of [NASA's Transform to Open Science (TOPS)](https://nasa.github.io/Transform-to-Open-Science/) initiative. It complements [TOPS OpenCore 101](https://nasa.github.io/Transform-to-Open-Science/take-os101/) to provide a transparent and comprehensive curriculum covering the key tools, methods, and practices in the exoplanet research field through the use of interactive Jupyter notebooks. In a rapidly expanding field, ExoCore's primary goal is to give aspiring and current researchers exposure to state-of-the-art workflows to expedite their ability to contribute to the field. As a component of [ScienceCore](https://www.nasa.gov/centers-and-facilities/marshall/nasa-boosts-open-science-through-innovative-training/), ExoCore fulfills this goal in several ways: participants can actively practice these workflows, providing important 'hands-on' engagement; the lessons are filled with descriptive visuals, providing enriching context to potentially abstract and technical processes; the lessons are supplemented with hyperlinks that provide additional resources outside the scope of the lessons or provide alternative approaches to the methods and tools being taught.
 
 ![image](./ExoCore/Auxiliary_Files/Graphics/Main_Page/ExoCore_V2.png)
 
 
 # Intended Learning Outcomes
+
 To help potential students decide if ExoCore is appropriate for their research goals, the following enumerate what ExoCore **is** and what it **is not**.
 
 <div class="alert alert-block alert-info">
@@ -38,7 +40,7 @@ To help potential students decide if ExoCore is appropriate for their research g
 
 ExoCore is divided into **seven** modules that categorize lessons based on a particular aspect of exoplanet research. They include:
 
-* Databases
+* Catalogs
 * Data Repositories
 * Data Structures
 * Data Analysis and Modeling Software
@@ -50,9 +52,16 @@ Further information on module content and specific lessons can be found in the m
 
 # Pre-curricular survey
 
+To efficiently curate which modules and lessons are best suited for an individual user, we have developed a [pre-survey]() to assess both desired learning outcomes and preliminary proficiency in relevant topics. The output of the pre-survey will give a **custom** cirriculum which orders and outlines how to navigate the content of ExoCore. This will minimize content that is already familiar or not relevant for a given use case while still being comprehensive. This pre-survey is divided into two parts:
+
+1. Learning Outcomes and Familiarity Survey
+2. Pre-Curricular Assessment
+
+The initial survey is used to gauge interest in particular topics or workflows, as well as prior experience in related software and topics. The assessment that follows will be generated based on the responses from the initial survey, and will gauge prior proficiency in relevant topics and softwares. The responses are then used to suggest a custom curriculum, as well as to measure the outcomes of ExoCore.
 
 # Post-curricular survey
 
+A post-curricular survey will be administered concluding ExoCore which will assess the efficacy of the lessons and modules completed. Additionally, it will solicit feedback on how ExoCore is administered, and any areas that were effective or could be improved.
 
 # Accessing ExoCore
 You can explore ExoCore using Binder. Clicking the button below will generate a Docker image of ExoCore on BinderHub. The initialization process will take about two minutes.
@@ -61,8 +70,10 @@ You can explore ExoCore using Binder. Clicking the button below will generate a 
 
 # Contributing to ExoCore
 
+We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `exocore@wustl.edu` if you are interested in contributing to ExoCore.
 
 # Credits
+
 
 
 # Citing ExoCore
