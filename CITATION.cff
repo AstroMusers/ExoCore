@@ -1,0 +1,48 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ExoCore
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Tansu
+    family-names: Daylan
+    orcid: 'https://orcid.org/0000-0002-6939-9211'
+    affiliation: Washington University in St. Louis
+    email: tansu@wustl.edu
+  - given-names: Nathan
+    family-names: Whitsett
+    email: whitsett.n@wustl.edu
+    affiliation: Washington University in St. Louis
+    orcid: 'https://orcid.org/0000-0002-7960-8064'
+  - given-names: Sophia
+    family-names: Acker
+    email: acker@wustl.edu
+    affiliation: Washington University in St. Louis
+  - given-names: Sabrina
+    family-names: Weldon
+    email: s.a.weldon@wustl.edu
+    affiliation: Washington University in St. Louis
+  - given-names: Aavik
+    family-names: Wadivkar
+    email: a.wadivkar@wustl.edu
+    affiliation: Washington University in St. Louis
+repository-code: 'https://github.com/AstroMusers/ExoCore'
+url: 'https://astromusers.github.io/ExoCore/'
+abstract: >-
+  ExoCore is a curriculum of open science for the field of
+  exoplanets developed as part of NASA's Transform to Open
+  Science (TOPS) initiative. It complements TOPS OpenCore
+  101 to provide a transparent and comprehensive curriculum
+  covering the key tools, methods, and practices in the
+  exoplanet research field through the use of interactive
+  Jupyter notebooks.
+keywords:
+  - ExoCore
+  - NASA TOPS
+  - Exoplanets
+  - Education
+license: MIT
