@@ -70,10 +70,12 @@ You can explore ExoCore using Binder. Clicking the button below will generate a 
 
 # Contributing to ExoCore
 
-We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `exocore@wustl.edu` if you are interested in contributing to ExoCore.
+We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `exocore@wustl.edu` if you are interested in contributing to the ExoCore curriculum.
 
 # Credits
 
 
 
 # Citing ExoCore
+
+You can cite ExoCore and its contributors using the "Cite this repository" drop-down in the "About" section of ExoCore's [GitHub page](https://github.com/AstroMusers/ExoCore).
