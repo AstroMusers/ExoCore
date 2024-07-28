@@ -72,8 +72,11 @@ You can explore ExoCore using Binder. Clicking the button below will generate a 
 
 We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `exocore@wustl.edu` if you are interested in contributing to the ExoCore curriculum.
 
-# Credits
+# Contributors
 
+The current contributors to ExoCore include:
+
+Tansu Daylan, Nathan Whitsett, Sabrina Weldon, Sophia Acker, and Aavik Wadivkar.
 
 
 # Citing ExoCore
