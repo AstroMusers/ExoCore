@@ -70,7 +70,7 @@ You can explore ExoCore using Binder. Clicking the button below will generate a 
 
 # Contributing to ExoCore
 
-We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `exocore@wustl.edu` if you are interested in contributing to the ExoCore curriculum.
+We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `tansu@wustl.edu` if you are interested in contributing to the ExoCore curriculum.
 
 # Contributors
 
