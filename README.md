@@ -74,9 +74,7 @@ We are always looking to expand ExoCore's curriculum, particularly from develope
 
 # Contributors
 
-The current contributors to ExoCore include:
-
-Tansu Daylan, Nathan Whitsett, Sabrina Weldon, Sophia Acker, and Aavik Wadivkar.
+Nathan Whitsett (WashU) is the main developer of ExoCore. The other contributors to ExoCore include Sabrina Weldon (WashU), Sophia Acker (WashU), Aavik Wadivkar (WashU), and Tansu Daylan (WashU), who is the project's principle investigator.
 
 
 # Citing ExoCore
