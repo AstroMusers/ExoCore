@@ -72,9 +72,9 @@ You can explore ExoCore using Binder. Clicking the button below will generate a 
 
 We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `tansu@wustl.edu` if you are interested in contributing to the ExoCore curriculum.
 
-# Contributors
+# ExoCore Team
 
-Nathan Whitsett (WashU) is the main developer of ExoCore. The other contributors to ExoCore include Sabrina Weldon (WashU), Sophia Acker (WashU), Aavik Wadivkar (WashU), and Tansu Daylan (WashU), who is the project's principal investigator.
+Nathan Whitsett (WashU) is the main developer of ExoCore. The other contributors to ExoCore include Sabrina Weldon (WashU), Sophia Acker (WashU), Aavik Wadivkar (WashU), and Tansu Daylan (WashU), who is the project's principal investigator at Washington University in St. Louis.
 
 
 # Citing ExoCore
