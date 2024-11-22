@@ -74,9 +74,13 @@ We are always looking to expand ExoCore's curriculum, particularly from develope
 
 # Contributors
 
-Nathan Whitsett (WashU) is the main developer of ExoCore. The other contributors to ExoCore include Sabrina Weldon (WashU), Sophia Acker (WashU), Aavik Wadivkar (WashU), and Tansu Daylan (WashU), who is the project's principle investigator.
+Nathan Whitsett (WashU) is the main developer of ExoCore. The other contributors to ExoCore include Sabrina Weldon (WashU), Sophia Acker (WashU), Aavik Wadivkar (WashU), and Tansu Daylan (WashU), who is the project's principal investigator.
 
 
 # Citing ExoCore
 
 You can cite ExoCore and its contributors using the "Cite this repository" drop-down in the "About" section of ExoCore's [GitHub page](https://github.com/AstroMusers/ExoCore).
+
+
+# Funding Support
+We acknowledge support from NASA through the TOPST22 grant 80NSSC23K0865 and by the McDonnell Center for the Space Sciences (MCSS) at Washington University in St. Louis.
