@@ -82,5 +82,5 @@ Nathan Whitsett (WashU) is the main developer of ExoCore. The other contributors
 You can cite ExoCore and its contributors using the "Cite this repository" drop-down in the "About" section of ExoCore's [GitHub page](https://github.com/AstroMusers/ExoCore).
 
 
-# Funding Support
+# Funding Acknowledgment
 We acknowledge support from NASA through the TOPST22 grant 80NSSC23K0865 and by the McDonnell Center for the Space Sciences (MCSS) at Washington University in St. Louis.
