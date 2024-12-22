@@ -1,0 +1,36 @@
+name: ci_validation 
+
+on:
+    push:
+      branches: [ "bw-implement-ci" ]
+
+permissions: write-all
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3  # https://github.com/marketplace/actions/setup-miniconda
+        with:
+          activate-environment: exocore
+          environment-file: environment.yml
+          python-version: 3.12
+          auto-activate-base: false
+      - run: |
+          conda install nbconvert
+      - name: Gather changed notebooks
+        id: changed-files
+        uses: tj-actions/changed-files@v44.5.2
+        with:
+          files: |
+            **/*.ipynb
+      - name: Executing changed notebooks
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was updated, executing notebook"
+            jupyter nbconvert --template classic --to html --execute $file
+          done    
