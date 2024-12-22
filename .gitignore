@@ -1,3 +1,8 @@
+# Notebook outputs
+ExoCore/Curriculum/Data_Repositories/Data
+ExoCore/Curriculum/Data_Structures/*.csv
+ExoCore/Auxiliary_Files/Data/Data_Repositories/Data
+
 # Python cache
 __pycache__
 
