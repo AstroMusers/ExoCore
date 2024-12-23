@@ -2,7 +2,9 @@ name: ci_validation
 
 on:
     push:
-      branches: [ "bw-implement-ci" ]
+      branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
 
 permissions: write-all
 
