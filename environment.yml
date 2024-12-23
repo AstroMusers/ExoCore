@@ -1,0 +1,13 @@
+name: exocore
+dependencies:
+  - python=3.12
+  - astropy
+  - conda-forge::astroquery
+  - jupyter
+  - numpy
+  - pandas
+  - scipy
+  - pip
+  - pip:
+    - lightkurve
+    - git+https://github.com/sebastian-zieba/PACMAN.git
