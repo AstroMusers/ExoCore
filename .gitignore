@@ -1,3 +1,11 @@
+# Notebook outputs
+ExoCore/Curriculum/Data_Repositories/Data
+ExoCore/Curriculum/Data_Structures/*.csv
+ExoCore/Auxiliary_Files/Data/Data_Repositories/Data
+
+# Python test script to execute all notebooks
+run_notebooks.py
+
 # Python cache
 __pycache__
 
