@@ -74,7 +74,7 @@ We are always looking to expand ExoCore's curriculum, particularly from develope
 
 # ExoCore Team
 
-ExoCore is developed by AstroMusers in the Department of Physics at Washington University in St. Louis. Nathan Whitsett and Bryce Wedig are the main developers. The other contributors to ExoCore include Ekrem Esmer, Aavik Wadivkar, Gabrielle Jager, and Sophia Acker. Tansu Daylan is the principal investigator.
+ExoCore is developed by AstroMusers in the Department of Physics at Washington University in St. Louis. Nathan Whitsett and Bryce Wedig are the main developers. The other contributors to ExoCore include Ekrem Esmer, Aavik Wadivkar, Gabriella Jager, and Sophia Acker. Tansu Daylan is the principal investigator.
 
 
 # Citing ExoCore
