@@ -70,15 +70,17 @@ You can explore ExoCore using Binder. Clicking the button below will generate a 
 
 # Contributing to ExoCore
 
-We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `exocore@wustl.edu` if you are interested in contributing to the ExoCore curriculum.
+We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `tansu@wustl.edu` if you are interested in contributing to the ExoCore curriculum.
 
-# Contributors
+# ExoCore Team
 
-The current contributors to ExoCore include:
-
-Tansu Daylan, Nathan Whitsett, Sabrina Weldon, Sophia Acker, and Aavik Wadivkar.
+ExoCore is developed by AstroMusers in the Department of Physics at Washington University in St. Louis. Nathan Whitsett and Bryce Wedig are the main developers. The other contributors to ExoCore include Ekrem Esmer, Aavik Wadivkar, Gabriella Jager, and Sophia Acker. Tansu Daylan is the principal investigator.
 
 
 # Citing ExoCore
 
 You can cite ExoCore and its contributors using the "Cite this repository" drop-down in the "About" section of ExoCore's [GitHub page](https://github.com/AstroMusers/ExoCore).
+
+
+# Funding Acknowledgment
+We acknowledge support from NASA through the TOPST22 grant 80NSSC23K0865 and by the McDonnell Center for the Space Sciences (MCSS) at Washington University in St. Louis.
