@@ -1,0 +1,80 @@
+[
+    {
+        "question": "Which file formats do the interactive tables support? Select all that apply.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": ".csv",
+                "correct": true,
+                "feedback": "Correct! This is the most popular format used."
+            },
+            {
+                "answer": ".html",
+                "correct": false,
+                "feedback": "Incorrect. HTML is primarily used for website design."
+            },
+            {
+                "answer": "Tab-Separated",
+                "correct": true,
+                "feedback": "Correct! Similar to Comma Separated Values (.csv), though less popular."
+            },
+            {
+                "answer": ".zip",
+                "correct": false,
+                "feedback": "Incorrect. .zip files are used when compressing data, not storing values directly."
+            },
+            {
+                "answer": ".png",
+                "correct": false,
+                "feedback": "Incorrect. PNG is an image format."
+            }
+        ]
+    },
+    {
+        "question": "Which represents proper syntax for filtering numerical columns in interactive tables? Select all that apply.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "[0,20]",
+                "correct": true,
+                "feedback": "Correct. This filters entires within the specified range, inclusively."
+            },
+            {
+                "answer": "(2,9]",
+                "correct": true,
+                "feedback": "Correct. Mixing and matching exclusive and inclusive ranges is supported."
+            },
+            {
+                "answer": "not null",
+                "correct": true,
+                "feedback": "Correct. This excludes removes all targets without an entry in that column."
+            },
+            {
+                "answer": "$\\sim10$",
+                "correct": false,
+                "feedback": "Incorrect, 'approximately' is not supported filtering syntax."
+            },
+            {
+                "answer": "$$== 2$$",
+                "correct": false,
+                "feedback": "Incorrect, '==' is a comparison. '=' is supported as equivalent."
+            }
+        ]
+    },
+    {
+        "question": "Reported numerical values in the interactive tables always have an uncertainty assigned to them.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true,
+                "feedback": "Incorrect. Sometimes, authors may not assign uncertainties, and it is up to the user to assess the confidence of the reported value."
+            },
+            {
+                "answer": "False",
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    }
+]
