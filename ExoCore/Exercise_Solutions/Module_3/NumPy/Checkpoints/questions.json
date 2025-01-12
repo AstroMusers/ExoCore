@@ -1,0 +1,80 @@
+[
+    {
+        "question": "Which of the following will invert the elements of an array, `arr`?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "arr = arr[-1]",
+                "correct": false,
+                "feedback": "Incorrect. This returns only the last element."
+            },
+            {
+                "answer": "arr = arr[::-1]",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "arr = arr[1:]",
+                "correct": false,
+                "feedback": "Incorrect. This returns the same array, excluding the first value."
+            },
+            {
+                "answer": "arr = arr[3::-1]",
+                "correct": false,
+                "feedback": "Incorrect. This returns an array from the fourth element back to the first element."
+            }
+        ]
+    },
+    {
+        "question": "Which list comprehension syntax will exclude all negative elements, and multiply the remaining elements in an array, `arr`, by 1.5 times?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "arr = [x*1.5 for x in arr if x < 0]",
+                "correct": false,
+                "feedback": "Incorrect. Almost! This will exclude all positive elements, not negative."
+            },
+            {
+                "answer": "arr = [x/2 for x in arr if np.abs(x) <= 0]",
+                "correct": false,
+                "feedback": "Incorrect. This divides all elements by two, and doesn't exclude any values!"
+            },
+            {
+                "answer": "arr = [x*1.5 for x in arr if x > 0]",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "arr = [x*1.5 for x in arr]",
+                "correct": false,
+                "feedback": "Incorrect. This gets close, but does not exclude negative values."
+            }
+        ]
+    },
+    {
+        "question": "What conditional would you pass to check if a value, x, is NAN?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "if x == np.nan",
+                "correct": false,
+                "feedback": "Incorrect. Since NANs are not a string, number, or int, checking exactness is not well defined."
+            },
+            {
+                "answer": "if np.isnan(x) == 'True'",
+                "correct": false,
+                "feedback": "Incorrect. The returned value form np.isnan() is a Bool, not a string."
+            },
+            {
+                "answer": "if np.isnan(x) == True",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "if x == 'nan'",
+                "correct": false,
+                "feedback": "Incorrect. The RHS is a string, not a np.nan object. Additionally, '==' conditional does not work to check if a value is NAN."
+            }
+        ]
+    }
+]
