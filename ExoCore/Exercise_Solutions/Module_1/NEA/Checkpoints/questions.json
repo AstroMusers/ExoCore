@@ -67,7 +67,7 @@
         "answers": [
             {
                 "answer": "True",
-                "correct": true,
+                "correct": false,
                 "feedback": "Incorrect. Sometimes, authors may not assign uncertainties, and it is up to the user to assess the confidence of the reported value."
             },
             {
