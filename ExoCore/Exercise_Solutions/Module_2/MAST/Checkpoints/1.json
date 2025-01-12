@@ -1,0 +1,107 @@
+[
+    {
+        "question": "How can you query an object using the basic search fuctionality in MAST?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Search by Object Name",
+                "correct": true,
+                "feedback": "Correct. This includes standard catalog names, common names, and star catalogs with coordinates."
+            },
+            {
+                "answer": "Search by Coordinate",
+                "correct": true,
+                "feedback": "Correct. You can search by an object's right ascension and declination, and within a certain radius of that coordinate."
+            },
+            {
+                "answer": "Search by Constellation",
+                "correct": false,
+                "feedback": "Incorrect. Searching by this will either return no results or an object that happens to share a close common name with the constellation."
+            },
+            {
+                "answer": "Search by _______",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+        ]
+    },
+    {
+        "question": "What is the minimum required information to include in a search for a list of targets?",
+        "type": "many_choice",
+        "answer_cols": 4,
+        "answers": [
+            {
+                "answer": "Target Name",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Target RA and DEC",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Target Galactic Coordinates",
+                "correct": false,
+                "feedback": "Incorrect. While this is a valid search parameter, it is not required."
+            },
+            {
+                "answer": "Target Mission",
+                "correct": false,
+                "feedback": "Incorrect. While this is a valid search parameter, it is not required."
+            }
+        ]
+    },
+    {
+        "question": "Which of these are browsing options available in MAST?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "AstroView",
+                "correct": true,
+                "feedback": "Correct. MAST will display the position of the object in a sky viewer."
+            },
+            {
+                "answer": "Browser Visualizations",
+                "correct": true,
+                "feedback": "Correct. Certain data products can be viewed or otherwise visualized in a browser before download."
+            },
+            {
+                "answer": "Exporting the Results Grid",
+                "correct": true,
+                "feedback": "Correct. While not always necessary, you can export the results of your search to a CSV file, among other common formats."
+            },
+            {
+                "answer": "XYZ",
+                "correct": false,
+                "feedback": "False. Idk why yet."
+            }
+        ]
+    },
+    {
+        "question": "What are different methods to use when querying MAST?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "query_object",
+                "correct": true,
+                "feedback": "Correct. This includes standard catalog names, common names, and star catalogs with coordinates."
+            },
+            {
+                "answer": "query_region",
+                "correct": true,
+                "feedback": "Correct. You can search by an object's right ascension and declination, and within a certain radius of that coordinate."
+            },
+            {
+                "answer": "query_criteria",
+                "correct": true,
+                "feedback": "Correct. This is the most flexible search option, allowing you to specify a wide range of criteria."
+            },
+            {
+                "answer": "query_table",
+                "correct": false,
+                "feedback": "Incorrect. query_table is not a valid method for querying MAST."
+            }
+        ]
+    }
+]
