@@ -1,235 +1,106 @@
 [
     {
-        "question": "Choose all of the following that can be included in Jupyter notebooks?",
+        "question": "How can you query an object using the basic search fuctionality in MAST?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Text and graphics output from Python",
+                "answer": "Search by Object Name",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct. This includes standard catalog names, common names, and star catalogs with coordinates."
             },
             {
-                "answer": "Typeset mathematics",
+                "answer": "Search by Coordinate",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct. You can search by an object's right ascension and declination, and within a certain radius of that coordinate."
             },
             {
-                "answer": "Python executable code",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Formatted text",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Live snakes via Python",
+                "answer": "Search by Constellation",
                 "correct": false,
-                "feedback": "I hope not."
+                "feedback": "Incorrect. Searching by this will either return no results or an object that happens to share a close common name with the constellation."
+            },
+            {
+                "answer": "Search by _______",
+                "correct": false,
+                "feedback": "Incorrect."
             }
         ]
     },
     {
-        "question": "Testing parameter to change number of colums for answers: Choose all of the following that can be included in Jupyter notebooks?",
+        "question": "What is the minimum required information to include in a search for a list of targets?",
         "type": "many_choice",
         "answer_cols": 4,
         "answers": [
             {
-                "answer": "Text and graphics output from Python",
+                "answer": "Target Name",
                 "correct": true,
                 "feedback": "Correct."
             },
             {
-                "answer": "Typeset mathematics",
+                "answer": "Target RA and DEC",
                 "correct": true,
                 "feedback": "Correct."
             },
             {
-                "answer": "Python executable code",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Formatted text",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "Live snakes via Python",
+                "answer": "Target Galactic Coordinates",
                 "correct": false,
-                "feedback": "I hope not."
+                "feedback": "Incorrect. While this is a valid search parameter, it is not required."
+            },
+            {
+                "answer": "Target Mission",
+                "correct": false,
+                "feedback": "Incorrect. While this is a valid search parameter, it is not required."
             }
         ]
     },
     {
-        "question": "Which of these are used to create formatted text in Jupyter notebooks?",
-        "type": "multiple_choice",
+        "question": "Which of these are browsing options available in MAST?",
+        "type": "many_choice",
         "answers": [
             {
-                "answer": "Wiki markup",
-                "correct": false,
-                "feedback": "False."
-            },
-            {
-                "answer": "SVG",
-                "correct": false,
-                "feedback": "False."
-            },
-            {
-                "answer": "Markdown",
+                "answer": "AstroView",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct. MAST will display the position of the object in a sky viewer."
             },
             {
-                "answer": "Rich Text",
+                "answer": "Browser Visualizations",
+                "correct": true,
+                "feedback": "Correct. Certain data products can be viewed or otherwise visualized in a browser before download."
+            },
+            {
+                "answer": "Exporting the Results Grid",
+                "correct": true,
+                "feedback": "Correct. While not always necessary, you can export the results of your search to a CSV file, among other common formats."
+            },
+            {
+                "answer": "XYZ",
                 "correct": false,
-                "feedback": "False."
+                "feedback": "False. Idk why yet."
             }
         ]
     },
     {
-        "question": "Enter the value of $\\pi$ to 2 decimal places.",
-        "type": "numeric",
+        "question": "What are different methods to use when querying MAST?",
+        "type": "many_choice",
         "answers": [
             {
-                "type": "value",
-                "value": 3.14,
+                "answer": "query_object",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct. This includes standard catalog names, common names, and star catalogs with coordinates."
             },
             {
-                "type": "range",
-                "range": [
-                    3.142857,
-                    3.142858
-                ],
+                "answer": "query_region",
                 "correct": true,
-                "feedback": "True to 2 decimal places, but you know $\\pi$ is not really 22/7, right?"
+                "feedback": "Correct. You can search by an object's right ascension and declination, and within a certain radius of that coordinate."
             },
             {
-                "type": "range",
-                "range": [
-                    -100000000,
-                    0
-                ],
-                "correct": false,
-                "feedback": "$\\pi$ is the AREA of a circle of radius 1. Try again."
-            },
-            {
-                "type": "default",
-                "feedback": "$\\pi$ is the area of a circle of radius 1. Try again."
-            }
-        ]
-    },
-    {
-        "question": "Enter the value of $\\pi$ to 2 decimal places.",
-        "type": "numeric",
-        "precision": 2,
-        "answers": [
-            {
-                "type": "value",
-                "value": 3.14,
+                "answer": "query_criteria",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct. This is the most flexible search option, allowing you to specify a wide range of criteria."
             },
             {
-                "type": "range",
-                "range": [
-                    3.142857,
-                    3.142858
-                ],
-                "correct": true,
-                "feedback": "True to 2 decimal places, but you know $\\pi$ is not really 22/7, right?"
-            },
-            {
-                "type": "range",
-                "range": [
-                    -100000000,
-                    0
-                ],
+                "answer": "query_table",
                 "correct": false,
-                "feedback": "$\\pi$ is the AREA of a circle of radius 1. Try again."
-            },
-            {
-                "type": "default",
-                "feedback": "$\\pi$ is the area of a circle of radius 1. Try again."
-            }
-        ]
-    },
-    {
-        "question": "Determine the output of the following Python code:",
-        "code": "a=\"1\"\nb=\"2\"\nprint(a+b)",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "1",
-                "correct": false,
-                "feedback": "No. When strings are operated on by +, they are concatenated."
-            },
-            {
-                "answer": "2",
-                "correct": false,
-                "feedback": "No. When strings are operated on by +, they are concatenated."
-            },
-            {
-                "answer": "3",
-                "correct": false,
-                "feedback": "No. When strings are operated on by +, they are concatenated."
-            },
-            {
-                "answer": "12",
-                "correct": true,
-                "feedback": "Yes. The + operator will concatenate the strings \"1\" and \"2\"."
-            },
-            {
-                "answer": "error",
-                "correct": false,
-                "feedback": "No. The + operator for strings performs string concatenation."
-            }
-        ]
-    },
-    {
-        "question": "The variable mylist is a Python list. Choose which code snippet will append the item 3 to mylist.",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "code": "mylist+=3",
-                "correct": false
-            },
-            {
-                "code": "mylist+=[3]",
-                "correct": true
-            },
-            {
-                "code": "mylist+={3}",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "Which of these is the ratio of a circle's circumference to its diameter?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "$\\pi$",
-                "correct": true,
-                "feedback": "Correct."
-            },
-            {
-                "answer": "$\\frac{22}{7}$",
-                "correct": false,
-                "feedback": "$\\frac{22}{7}$ is only an approximation to the true value."
-            },
-            {
-                "answer": "3",
-                "correct": false,
-                "feedback": "This is a crude approximation to the true value."
-            },
-            {
-                "answer": "$\\tau$",
-                "correct": false,
-                "feedback": "True for the ratio of the circle's circumference to its radius, not diameter."
+                "feedback": "Incorrect. query_table is not a valid method for querying MAST."
             }
         ]
     }
