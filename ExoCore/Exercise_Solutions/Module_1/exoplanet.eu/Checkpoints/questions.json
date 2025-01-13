@@ -1,0 +1,154 @@
+[
+    {
+        "question": "Which file formats do the interactive tables support? Select all that apply.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": ".csv",
+                "correct": true,
+                "feedback": "Correct! This is the most popular format used."
+            },
+            {
+                "answer": ".html",
+                "correct": false,
+                "feedback": "Incorrect. HTML is primarily used for website design."
+            },
+            {
+                "answer": "Tab-Separated",
+                "correct": true,
+                "feedback": "Correct! Similar to Comma Separated Values (.csv), though less popular."
+            },
+            {
+                "answer": ".zip",
+                "correct": false,
+                "feedback": "Incorrect. .zip files are used when compressing data, not storing values directly."
+            },
+            {
+                "answer": ".png",
+                "correct": false,
+                "feedback": "Incorrect. PNG is an image format."
+            }
+        ]
+    },
+    {
+        "question": "Which represents proper syntax for filtering numerical columns in interactive tables? Select all that apply.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "[0,20]",
+                "correct": true,
+                "feedback": "Correct. This filters entires within the specified range, inclusively."
+            },
+            {
+                "answer": "(2,9]",
+                "correct": true,
+                "feedback": "Correct. Mixing and matching exclusive and inclusive ranges is supported."
+            },
+            {
+                "answer": "not null",
+                "correct": true,
+                "feedback": "Correct. This excludes removes all targets without an entry in that column."
+            },
+            {
+                "answer": "~10",
+                "correct": false,
+                "feedback": "Incorrect, 'approximately' is not supported filtering syntax."
+            },
+            {
+                "answer": "== 2",
+                "correct": false,
+                "feedback": "Incorrect, '==' is a comparison. '=' is supported as equivalent."
+            }
+        ]
+    },
+    {
+        "question": "Reported numerical values in the interactive tables always have an uncertainty assigned to them.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true,
+                "feedback": "Incorrect. Sometimes, authors may not assign uncertainties, and it is up to the user to assess the confidence of the reported value."
+            },
+            {
+                "answer": "False",
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    },
+    {
+        "question": "Which methods does `query_object` support? Select all that apply.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Filter by parameter value via `where` argument.",
+                "correct": false,
+                "feedback": "Incorrect. This can be done in the `query_criteria` method."
+            },
+            {
+                "answer": "Query only known exoplanets.",
+                "correct": false,
+                "feedback": "Incorrect! Both known planets and known exoplanet hosts are supported."
+            },
+            {
+                "answer": "Select particular columns using the `criteria` argument.",
+                "correct": false,
+                "feedback": "Incorrect! Columns are quiered by the `select` argument."
+            },
+            {
+                "answer": "None of the above.",
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    },
+    {
+        "question": "How many exoplanets are contained within a circle of diameter six degrees centered at RA 40.00 degrees and DEC +50.00 degrees?",
+        "type": "numeric",
+        "precision": 2,
+        "answers": [
+            {
+                "type": "value",
+                "value": 3,
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "type": "value",
+                "value": 5,
+                "correct": false,
+                "feedback": "Incorrect. This is the number of entries for this region. Use the 'pscomppar' table, not the 'ps' table."
+            }
+        ]
+    },
+    {
+        "question": "Using the ephemeris service, determine how many primary transits of TRAPPIST-1 b are visible from the Kitt Peak observatory between October 9th (00:01) and October 25th (23:59), 2025.",
+        "type": "numeric",
+        "precision": 2,
+        "answers": [
+            {
+                "type": "value",
+                "value": 6,
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    },
+    {
+        "question": "The habitable zone (HZ) around a Betelgeuse-like star (~70 solar radii, Teff of 3500 K) is less than the typical orbital distance of Saturn. ",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false,
+                "feedback": "Incorrect. Saturn's semi-major axis is around 9 AU. The HZ of Betelgeuse is around 19 AU!"
+            },
+            {
+                "answer": "False",
+                "correct": true,
+                "feedback": "Correct! The inner habitable zone of Betelgeuse is estimated to be around 19 AU! That's almost the semi-major axis of Uranus."
+            }
+        ]
+    }
+]

@@ -10,5 +10,4 @@ dependencies:
   - pip
   - pip:
     - lightkurve
-    - git+https://github.com/sebastian-zieba/PACMAN.git
     - jupyterquiz
