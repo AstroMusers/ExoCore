@@ -1,0 +1,220 @@
+[
+    {
+        "question": "Which of the following will invert the elements of an array, `arr`?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "arr = arr[-1]",
+                "correct": false,
+                "feedback": "Incorrect. This returns only the last element."
+            },
+            {
+                "answer": "arr = arr[::-1]",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "arr = arr[1:]",
+                "correct": false,
+                "feedback": "Incorrect. This returns the same array, excluding the first value."
+            },
+            {
+                "answer": "arr = arr[3::-1]",
+                "correct": false,
+                "feedback": "Incorrect. This returns an array from the fourth element back to the first element."
+            }
+        ]
+    },
+    {
+        "question": "Which list comprehension syntax will exclude all negative elements, and multiply the remaining elements in an array, `arr`, by 1.5 times?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "arr = [x*1.5 for x in arr if x < 0]",
+                "correct": false,
+                "feedback": "Incorrect. Almost! This will exclude all positive elements, not negative."
+            },
+            {
+                "answer": "arr = [x/2 for x in arr if np.abs(x) <= 0]",
+                "correct": false,
+                "feedback": "Incorrect. This divides all elements by two, and doesn't exclude any values!"
+            },
+            {
+                "answer": "arr = [x*1.5 for x in arr if x > 0]",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "arr = [x*1.5 for x in arr]",
+                "correct": false,
+                "feedback": "Incorrect. This gets close, but does not exclude negative values."
+            }
+        ]
+    },
+    {
+        "question": "What conditional would you pass to check if a value, x, is NAN?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "if x == np.nan",
+                "correct": false,
+                "feedback": "Incorrect. Since NANs are not a string, number, or int, checking exactness is not well defined."
+            },
+            {
+                "answer": "if np.isnan(x) == 'True'",
+                "correct": false,
+                "feedback": "Incorrect. The returned value form np.isnan() is a Bool, not a string."
+            },
+            {
+                "answer": "if np.isnan(x) == True",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "if x == 'nan'",
+                "correct": false,
+                "feedback": "Incorrect. The RHS is a string, not a np.nan object. Additionally, '==' conditional does not work to check if a value is NAN."
+            }
+        ]
+    },
+    {
+        "question": "Which array creation method will create a 4x30 array, with each element being `45`?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "np.ones((4, 30), value=45)",
+                "correct": false,
+                "feedback": "Incorrect. While np.ones is on the right track and the dimensions are correct, passing `value=45` will not work."
+            },
+            {
+                "answer": "np.ones((4, 30))*45",
+                "correct": true,
+                "feedback": "Correct!."
+            },
+            {
+                "answer": "np.linspace((4, 30))*40",
+                "correct": true,
+                "feedback": "Incorrect. Linspace creates evenly spaced arrays from the start and end value."
+            },
+            {
+                "answer": "np.zeros((4,30)) + np.ones((4,30))",
+                "correct": false,
+                "feedback": "Incorrect. While this gives the right shape, the values will be 1s, and the zero array is unnecessary."
+            }
+        ]
+    },
+    {
+        "question": "np.argmax(array) will return the highest value in the array.",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false,
+                "feedback": "Incorrect. It will return the index of the highest value."
+            },
+            {
+                "answer": "False",
+                "correct": false,
+                "feedback": "Correct!"
+            }
+        ]
+    },
+    {
+        "question": "What method allows you to take three arrays, arr1, arr2, arr3, and export them as a three columned csv file?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "np.hstack((arr1, arr2, arr3)).T",
+                "correct": false,
+                "feedback": "Incorrect. hstack will stack all arrays into a single column."
+            },
+            {
+                "answer": "np.vstack((arr1,arr2,arr3))",
+                "correct": false,
+                "feedback": "Incorrect. Close, but you need to transpose."
+            },
+            {
+                "answer": "np.vstack((arr1,arr2,arr3)).T",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "np.array((arr1,arr2,arr3))",
+                "correct": false,
+                "feedback": "Incorrect, this creates a new array with the three arrays inside of a tuple."
+            }
+        ]
+    },
+    {
+        "question": "np.argmax(array) will return the highest value in the array.",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false,
+                "feedback": "Incorrect. It will return the index of the highest value."
+            },
+            {
+                "answer": "False",
+                "correct": false,
+                "feedback": "Correct!"
+            }
+        ]
+    },
+    {
+        "question": "How do you call a random normal variate with mean 10 and variance 16?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "np.random.normal(loc = 16, scale = 10)",
+                "correct": false,
+                "feedback": "Incorrect. `loc` specifies the mean, and scale specifies the standard deviation."
+            },
+            {
+                "answer": "np.random.normal(loc = 10, scale = 4)",
+                "correct": false,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "np.random.normal(loc = 10, scale = 16)",
+                "correct": true,
+                "feedback": "Incorrect. While the mean is correct, the scale is the standard deviation, not variance."
+            },
+            {
+                "answer": "np.random.random(loc = 10, scale = 4)",
+                "correct": false,
+                "feedback": "Incorrect. np.random.random creates a random variate between [0, 1), and does not specify the passed arguments."
+            }
+        ]
+    },
+    {
+        "question": "NumPy has methods to support a quartic fit.",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "False",
+                "correct": false,
+                "feedback": "Incorrect. This can be done using np.polynomial.polynomial.polyfit(x,y,4)"
+            }
+        ]
+    },
+    {
+        "question": "In the system of equation below, what is the sum of x0, x1, and x2? Use np.linalg.solve.",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": "-0.125",
+                "correct": true,
+                "feedback": "Correct"
+            }
+            
+        ]
+    }
+]
