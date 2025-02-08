@@ -14,25 +14,17 @@ ExoCore is a curriculum of open science for the field of exoplanets developed as
 
 # Intended Learning Outcomes
 
-To help potential students decide if ExoCore is appropriate for their research goals, the following enumerate what ExoCore **is** and what it **is not**.
-
 <div class="alert alert-block alert-info">
 
-**ExoCore ***is*****:
-* **a modular curriculum aimed towards advanced undergraduates and beginning graduate students with basic proficiency in ***Python*****.
-* **a useful tool to learn specific research workflows (e.g., transit modeling, spectroscopy reduction)**.
-* **a general hub and pointer for open software, resources, and collaborations in exoplanet research**.
-* **able to jump-start students to engage in current research**.
-* **non-linear, so lessons can be (mostly) done independently**.
-
+ExoCore aims for the audience to be able to
+* efficiently locate resources across exoplanet research,
+* get inspired by examples on reproducible research workflows (e.g., transit modeling, spectroscopy reduction),
+* jump-start in identifying interesting research problems and tackling them in the absence of local mentorship.
 </div>
 
-<div class="alert alert-block alert-warning">
+ExoCore is aimed toward advanced undergraduates and beginning graduate students.
 
-**ExoCore** ***is not***:
-* **a ***Python*** course**.
-* **a physics/math course (does not discuss, e.g., Hamiltonians, equation derivations, formation theories)**.
-* **exhaustive. The lessons contain **primary** functionality and use cases. Students are encouraged to dig deeper and use the hyperlinked resources to get the most out of their experience**.
+<div class="alert alert-block alert-warning">
 
 </div>
 
