@@ -46,16 +46,16 @@ Further information on module content and specific lessons can be found in the m
 
 # Pre-curricular survey
 
-To efficiently curate which modules and lessons are best suited for an individual user, we have developed a [pre-survey]() to assess both desired learning outcomes and preliminary proficiency in relevant topics. The output of the pre-survey will give a **custom** cirriculum which orders and outlines how to navigate the content of ExoCore. This will minimize content that is already familiar or not relevant for a given use case while still being comprehensive. This pre-survey is divided into two parts:
+To efficiently curate which modules and lessons are best suited for an individual user, we have developed a [pre-survey]() to assess both desired learning outcomes and preliminary proficiency in relevant topics. The output of the pre-survey will provide a **custom** curriculum that orders and outlines how to navigate ExoCore's content. This will minimize content that is already familiar or not relevant to a given use case while remaining comprehensive. This pre-survey is divided into two parts:
 
 1. Learning Outcomes and Familiarity Survey
 2. Pre-Curricular Assessment
 
-The initial survey is used to gauge interest in particular topics or workflows, as well as prior experience in related software and topics. The assessment that follows will be generated based on the responses from the initial survey, and will gauge prior proficiency in relevant topics and softwares. The responses are then used to suggest a custom curriculum, as well as to measure the outcomes of ExoCore.
+The initial survey is used to gauge interest in particular topics or workflows, as well as prior experience in related software and topics. The assessment that follows will be generated from responses to the initial survey and will gauge prior proficiency in relevant topics and software. The responses are then used to suggest a custom curriculum and to measure the outcomes of ExoCore.
 
 # Post-curricular survey
 
-A post-curricular survey will be administered concluding ExoCore which will assess the efficacy of the lessons and modules completed. Additionally, it will solicit feedback on how ExoCore is administered, and any areas that were effective or could be improved.
+A post-curricular survey will be administered at the conclusion of ExoCore to assess the efficacy of the lessons and modules completed. Additionally, it will solicit feedback on how ExoCore is administered and any areas that were effective or could be improved.
 
 # Accessing ExoCore
 You can explore ExoCore using Binder. Clicking the button below will generate a Docker image of ExoCore on BinderHub. The initialization process will take about two minutes.
@@ -68,7 +68,7 @@ We are always looking to expand ExoCore's curriculum, particularly from develope
 
 # ExoCore Team
 
-ExoCore is developed by AstroMusers in the Department of Physics at Washington University in St. Louis. Nathan Whitsett and Bryce Wedig are the main developers. The other contributors to ExoCore include Ekrem Esmer, Aavik Wadivkar, Gabriella Jager, and Sophia Acker. Tansu Daylan is the principal investigator.
+ExoCore is developed by AstroMusers in the Department of Physics at Washington University in St. Louis. Nathan Whitsett and Bryce Wedig are the leading developers. The other contributors to ExoCore include Ekrem Esmer, Aavik Wadivkar, Gabriella Jager, and Sophia Acker. Tansu Daylan is the principal investigator.
 
 
 # Citing ExoCore
