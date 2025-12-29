@@ -43,7 +43,6 @@ Further information on module content and specific lessons can be found in the m
 
 
 # Pre-curricular survey
-
 To efficiently curate which modules and lessons are best suited for an individual user, we have developed a [pre-survey]() to assess both desired learning outcomes and preliminary proficiency in relevant topics. The output of the pre-survey will provide a **custom** curriculum that orders and outlines how to navigate ExoCore's content. This will minimize content that is already familiar or not relevant to a given use case while remaining comprehensive. This pre-survey is divided into two parts:
 
 1. Learning Outcomes and Familiarity Survey
@@ -55,17 +54,18 @@ The initial survey is used to gauge interest in particular topics or workflows, 
 # Post-curricular survey
 A post-curricular survey will be administered at the conclusion of ExoCore to assess the efficacy of the lessons and modules completed. Additionally, it will solicit feedback on how ExoCore is administered and any areas that were effective or could be improved.
 
+
 # Accessing ExoCore
 You can explore ExoCore using Binder. Clicking the button below will generate a Docker image of ExoCore on BinderHub. The initialization process will take about two minutes.
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/astromusers/exocore/HEAD)
 
 
 # Contributing to ExoCore
-We are always looking to expand ExoCore's curriculum, particularly from developers and current researchers. Please reach out via email at `tansu@wustl.edu` if you are interested in contributing to the ExoCore curriculum.
+We look forward to updating and expanding ExoCore, particularly through contributions from early-career researchers who have faced and overcome challenges associated with familiarizing themselves with the field. If you are interested in contributing to the ExoCore curriculum, please reach out via email at `tansu@wustl.edu`.
 
 
 # ExoCore Team
-ExoCore is developed by AstroMusers in the Department of Physics at Washington University in St. Louis. Nathan Whitsett and Bryce Wedig are the leading developers. The other contributors to ExoCore include Ekrem Esmer, Aavik Wadivkar, Gabriella Jager, and Sophia Acker. Tansu Daylan is the principal investigator.
+ExoCore is developed by members of AstroMusers in the Department of Physics at Washington University in St. Louis. Nathan Whitsett and Bryce Wedig are the leading developers. The other contributors to ExoCore include Ekrem Esmer, Zifan Lin, Jackie Vazquez, Aavik Wadivkar, Gabriella Jager, and Sophia Acker. Tansu Daylan is the principal investigator.
 
 
 # Citing ExoCore
