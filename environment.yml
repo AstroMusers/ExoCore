@@ -7,7 +7,7 @@ dependencies:
   - conda-forge::astroquery
   - jupyter
   - numpy<2
-  - pandas
+  - pandas<3
   - scipy
   - pip
   - pip:
