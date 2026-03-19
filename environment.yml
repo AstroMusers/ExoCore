@@ -3,14 +3,14 @@ channels:
   - defaults
 dependencies:
   - python=3.12
-  - astropy
-  - conda-forge::astroquery
+  - astropy=7.2.0
+  - conda-forge::astroquery=0.4.11
   - jupyter
   - numpy<2
   - pandas<3
-  - scipy
+  - scipy=1.16.3
   - pip
   - pip:
-    - lightkurve
-    - jupyterquiz
-    - rebound
+    - lightkurve==2.5.1
+    - jupyterquiz==2.9.6.4
+    - rebound==4.6.0
