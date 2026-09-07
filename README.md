@@ -24,7 +24,7 @@ ExoCore is aimed toward advanced undergraduates and beginning graduate students.
 
 <div class="alert alert-block alert-warning">
 
-Please refer to [this presentation](https://astromusers.wustl.edu/AAS245_ExoCore_Workshop_Presentation_20250113.pptx) and [worksheet](https://astromusers.wustl.edu/AAS245_ExoCore_Workshop_Handout_20250113.pdf) of a workshop our team organized during AAS 245 in National Harbor, Maryland, on January 13, 2025, sponsored by a AAS Education & Professional Development (AAS-EPD) grant.
+Please refer to [this presentation](https://astromusers.wustl.edu/AAS245_ExoCore_Workshop_Presentation_20250113.pptx) and [worksheet](https://astromusers.wustl.edu/AAS245_ExoCore_Workshop_Handout_20250113.pdf) of a workshop our team organized during AAS 245 in National Harbor, Maryland, on January 13, 2025, sponsored by an AAS Education & Professional Development (AAS-EPD) grant.
 
 </div>
 
