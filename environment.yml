@@ -6,6 +6,7 @@ dependencies:
   - astropy=7.2.0
   - conda-forge::astroquery=0.4.11
   - jupyter
+  - nbconvert
   - numpy<2
   - pandas<3
   - scipy=1.16.3

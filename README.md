@@ -6,7 +6,7 @@
 
 
 # Introduction
-ExoCore is an open-science curriculum for exoplanets, developed as part of [NASA's Open Science](https://nasa.github.io/Transform-to-Open-Science/) initiative. It complements [Open Science 101](https://nasa.github.io/Transform-to-Open-Science/take-os101/) by providing a transparent, comprehensive curriculum covering the key tools, methods, and practices in exoplanet research through interactive Jupyter notebooks. In a rapidly expanding field, ExoCore's primary goal is to give aspiring and current researchers exposure to state-of-the-art workflows to expedite their ability to contribute to the field. As a component of [ScienceCore](https://www.nasa.gov/centers-and-facilities/marshall/nasa-boosts-open-science-through-innovative-training/), ExoCore fulfills this goal in several ways: participants can actively practice these workflows, providing critical 'hands-on' engagement; the lessons are filled with descriptive visuals, providing enriching context to potentially abstract and technical processes; the lessons are supplemented with hyperlinks that provide additional resources outside the scope of the lessons or provide alternative approaches to the methods and tools being taught.
+ExoCore is an open-science curriculum for advanced undergraduate students, beginning graduate students, and researchers entering exoplanet science. Developed as part of NASA ScienceCore, it complements Open Science 101 with interactive Jupyter notebooks on catalogs, data archives, scientific Python, analysis software, citizen science, and research communities. Each lesson connects a scientific task to reproducible inputs, methods, outputs, and provenance.
 
 ![image](./ExoCore/Auxiliary_Files/Graphics/Main_Page/ExoCore_V2.png)
 
@@ -14,10 +14,10 @@ ExoCore is an open-science curriculum for exoplanets, developed as part of [NASA
 # Intended Learning Outcomes
 <div class="alert alert-block alert-info">
 
-ExoCore aims for the audience to be able to
-* efficiently locate resources across exoplanet research,
-* get inspired by examples on reproducible research workflows (e.g., transit modeling, spectroscopy reduction),
-* jump-start in identifying interesting research problems and tackling them in the absence of local mentorship.
+After completing relevant ExoCore modules, learners should be able to
+* locate and evaluate exoplanet catalogs, observations, software, and professional resources,
+* reproduce a documented workflow while preserving units, metadata, dependencies, and provenance,
+* adapt a worked example to a related research question and justify each major analysis choice.
 </div>
 
 ExoCore is aimed toward advanced undergraduates and beginning graduate students.
@@ -39,20 +39,19 @@ ExoCore is divided into **seven** modules that categorize lessons based on a par
 * Citizen Science
 * Exoplanet Resources and Collaborations
 
-Further information on module content and specific lessons can be found in the main [ExoCore](./ExoCore/ExoCore.ipynb) Jupyter notebook.
+Module descriptions, learning outcomes, activities, and lesson links are available in the canonical [ExoCore curriculum](./ExoCore/Curriculum/ExoCore.ipynb) notebook.
 
 
-# Pre-curricular survey
-To efficiently curate which modules and lessons are best suited for an individual user, we have developed a [pre-survey]() to assess both desired learning outcomes and preliminary proficiency in relevant topics. The output of the pre-survey will provide a **custom** curriculum that orders and outlines how to navigate ExoCore's content. This will minimize content that is already familiar or not relevant to a given use case while remaining comprehensive. This pre-survey is divided into two parts:
+# Planned curriculum surveys
+We plan to add a pre-curricular survey that recommends modules based on each learner's goals and prior experience. The planned survey has two parts:
 
 1. Learning Outcomes and Familiarity Survey
 2. Pre-Curricular Assessment
 
-The initial survey is used to gauge interest in particular topics or workflows, as well as prior experience in related software and topics. The assessment that follows will be generated from responses to the initial survey and will gauge prior proficiency in relevant topics and software. The responses are then used to suggest a custom curriculum and to measure the outcomes of ExoCore.
+The first part will identify relevant topics and workflows. The second will assess prerequisite knowledge and suggest an ordered learning pathway. Until this survey is available, learners should begin with the lesson most relevant to their goal and complete any prerequisites stated in that lesson.
 
 
-# Post-curricular survey
-A post-curricular survey will be administered at the conclusion of ExoCore to assess the efficacy of the lessons and modules completed. Additionally, it will solicit feedback on how ExoCore is administered and any areas that were effective or could be improved.
+We also plan to add a post-curricular survey that measures learning outcomes and collects feedback on completed lessons.
 
 
 # Accessing ExoCore

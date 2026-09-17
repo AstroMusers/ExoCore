@@ -1,4 +1,4 @@
-name: ci_validation 
+name: CI validation
 
 on:
     push:
@@ -6,7 +6,8 @@ on:
     pull_request:
       branches: [ "main" ]
 
-permissions: write-all
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -16,23 +17,26 @@ jobs:
         shell: bash -el {0}
     steps:
       - uses: actions/checkout@v4
+      - name: Validate notebook integrity
+        run: python scripts/validate_notebooks.py
       - uses: conda-incubator/setup-miniconda@v3  # https://github.com/marketplace/actions/setup-miniconda
         with:
           activate-environment: exocore
           environment-file: environment.yml
           python-version: 3.12
           auto-activate-base: false
-      - run: |
-          conda install nbconvert
+      - name: Register ExoCore kernel
+        run: python -m ipykernel install --user --name exocore-ci --display-name "ExoCore CI"
       - name: Gather changed notebooks
         id: changed-files
         uses: tj-actions/changed-files@v44.5.2
         with:
           files: |
             **/*.ipynb
-      - name: Executing changed notebooks
+      - name: Execute changed notebooks
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          for file in ${{ steps.changed-files.outputs.added_files }} ${{ steps.changed-files.outputs.modified_files }}; do
             echo "$file was updated, executing notebook"
-            jupyter nbconvert --template classic --to html --execute $file
-          done    
+            jupyter nbconvert --template classic --to html --execute \
+              --ExecutePreprocessor.kernel_name=exocore-ci "$file"
+          done
