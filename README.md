@@ -41,6 +41,17 @@ ExoCore is divided into **seven** modules that categorize lessons based on a par
 
 Further information on module content and specific lessons can be found in the main [ExoCore](./ExoCore/ExoCore.ipynb) Jupyter notebook.
 
+# Legacy naming migration
+The earlier repository used a different module taxonomy, but the content was conceptually aligned with the current organization. The active curriculum consolidates the older labels into a cleaner canonical structure to keep the learning path consistent across versions:
+
+* Databases → Catalogs
+* Software → Data Analysis and Modeling Software
+* Utility Software → Utility Software
+* Exoplanet Community → Exoplanet Resources and Collaborations
+* Data Repositories, Data Structures, and Citizen Science remain the same conceptually and are retained in the active layout.
+
+This consolidation preserves the valuable historical material while making the current curriculum easier to navigate. See [LEGACY_MIGRATION.md](./LEGACY_MIGRATION.md) for the full mapping and archive notes.
+
 
 # Pre-curricular survey
 To efficiently curate which modules and lessons are best suited for an individual user, we have developed a [pre-survey]() to assess both desired learning outcomes and preliminary proficiency in relevant topics. The output of the pre-survey will provide a **custom** curriculum that orders and outlines how to navigate ExoCore's content. This will minimize content that is already familiar or not relevant to a given use case while remaining comprehensive. This pre-survey is divided into two parts:
