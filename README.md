@@ -6,7 +6,7 @@
 
 
 # Introduction
-ExoCore is an open-science curriculum for advanced undergraduate students, beginning graduate students, and researchers entering exoplanet science. Developed as part of NASA ScienceCore, it complements Open Science 101 with interactive Jupyter notebooks on catalogs, data archives, scientific Python, analysis software, citizen science, and research communities. Each lesson connects a scientific task to reproducible inputs, methods, outputs, and provenance.
+Where do we find the data, what do the columns mean, and how do we turn them into a result someone else can reproduce? We built ExoCore around the practical questions that come up when entering exoplanet research. Developed as part of NASA ScienceCore, it complements Open Science 101 with interactive Jupyter notebooks on catalogs, data archives, scientific Python, analysis software, citizen science, and research communities. Each lesson connects a scientific question to its data, calculation, and assumptions.
 
 ![image](./ExoCore/Auxiliary_Files/Graphics/Main_Page/ExoCore_V2.png)
 
@@ -20,7 +20,7 @@ After completing relevant ExoCore modules, learners should be able to
 * adapt a worked example to a related research question and justify each major analysis choice.
 </div>
 
-ExoCore is aimed toward advanced undergraduates and beginning graduate students.
+The lessons are aimed at advanced undergraduates, beginning graduate students, and researchers entering exoplanet science.
 
 <div class="alert alert-block alert-warning">
 
@@ -60,7 +60,7 @@ You can explore ExoCore using Binder. Clicking the button below will generate a 
 
 
 # Contributing to ExoCore
-We look forward to updating and expanding ExoCore, particularly through contributions from early-career researchers who have faced and overcome challenges associated with familiarizing themselves with the field. If you are interested in contributing to the ExoCore curriculum, please reach out via email at `tansu@wustl.edu`.
+If a step confused you when you first entered the field, it is probably worth a lesson. We welcome contributions, especially from early-career researchers who can make those steps easier for the next person. Reach us at `tansu@wustl.edu` to contribute to the curriculum.
 
 
 # ExoCore Team

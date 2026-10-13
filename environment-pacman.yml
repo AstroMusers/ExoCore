@@ -1,0 +1,8 @@
+name: exocore-pacman
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - pacman@git+https://github.com/sebastian-zieba/PACMAN.git@v0.5
