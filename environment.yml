@@ -15,3 +15,4 @@ dependencies:
     - lightkurve==2.5.1
     - jupyterquiz==2.9.6.4
     - rebound==4.6.0
+    - tdpy
