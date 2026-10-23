@@ -42,24 +42,25 @@ ExoCore is divided into **seven** modules that categorize lessons based on a par
 Module descriptions, learning outcomes, activities, and lesson links are available in the canonical [ExoCore curriculum](./ExoCore/Curriculum/ExoCore.ipynb) notebook.
 
 
-# Planned curriculum surveys
-We plan to add a pre-curricular survey that recommends modules based on each learner's goals and prior experience. The planned survey has two parts:
-
-1. Learning Outcomes and Familiarity Survey
-2. Pre-Curricular Assessment
-
-The first part will identify relevant topics and workflows. The second will assess prerequisite knowledge and suggest an ordered learning pathway. Until this survey is available, learners should begin with the lesson most relevant to their goal and complete any prerequisites stated in that lesson.
-
-
-We also plan to add a post-curricular survey that measures learning outcomes and collects feedback on completed lessons.
-
-
 # Accessing ExoCore
 You can explore ExoCore using Binder. Clicking the button below will generate a Docker image of ExoCore on BinderHub. The initialization process will take about two minutes.
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/astromusers/exocore/HEAD)
 
+## Local paths
+
+From the checkout root, source `scripts/set_repository_path.sh` to set `EXOCORE_PATH` in the current shell. The repository-local `data/` and `visuals/` directories are ignored by Git for inputs and generated figures.
+
+
+# Plot backgrounds
+
+The plotting lessons and their worked solutions include a setup cell with
+`typeplotback = 'white'`. Set it to `'dark'` and rerun the setup to use a dark
+background with white axes. TDpy supplies the shared styling and is included
+in the main environment. The Lightkurve examples also apply the selected theme
+when displaying figures created by the library.
 
 # Contributing to ExoCore
+
 If a step confused you when you first entered the field, it is probably worth a lesson. We welcome contributions, especially from early-career researchers who can make those steps easier for the next person. Reach us at `tansu@wustl.edu` to contribute to the curriculum.
 
 
