@@ -15,4 +15,4 @@ dependencies:
     - lightkurve==2.5.1
     - jupyterquiz==2.9.6.4
     - rebound==4.6.0
-    - tdpy
+    - tdpy @ git+https://github.com/tansudaylan/tdpy.git@35df1703c6b63d6a62f7d44b12cf5928b5d355ed
