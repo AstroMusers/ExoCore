@@ -41,9 +41,12 @@ ExoCore is divided into **seven** modules that categorize lessons based on a par
 
 Module descriptions, learning outcomes, activities, and lesson links are available in the canonical [ExoCore curriculum](./ExoCore/Curriculum/ExoCore.ipynb) notebook.
 
+For an offline starting point, the [Astropy data-structures lesson](./ExoCore/Curriculum/Data_Structures/Astropy_Data.ipynb) follows physical units through a synthetic transit-depth calculation, a quantity-aware table, and an illustrative transit ephemeris. It includes a plotted model, a leap-second example, and exercises with answer checks. Its invented planets carry no observational claim. The curriculum marks the lesson Alpha while it receives review.
+
 
 # Accessing ExoCore
-You can explore ExoCore using Binder. Clicking the button below will generate a Docker image of ExoCore on BinderHub. The initialization process will take about two minutes.
+Launch the ExoCore notebooks in Binder with the button below. Binder builds
+their environment from the repository's `environment.yml`.
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/astromusers/exocore/HEAD)
 
 ## Local paths

@@ -71,7 +71,38 @@ def test_every_plotting_notebook_has_a_theme_setup():
         if any(word in source for word in ('plt.', 'pyplot', '.plot(')):
             plotting.add(path)
     assert plotting == set(NOTEBOOKS)
-    assert len(plotting) == 13
+    assert len(plotting) == 14
+
+
+def test_astropy_lesson_quantities_time_and_plot_match_synthetic_inputs(monkeypatch):
+    import tdpy.plotting as plotting
+    import astropy.units as units
+
+    path = ROOT / 'ExoCore/Curriculum/Data_Structures/Astropy_Data.ipynb'
+    notebook = json.loads(path.read_text())
+    monkeypatch.setattr(plotting, 'show_figures', lambda **kwargs: None)
+    namespace = {}
+    try:
+        with plot_style('white'):
+            for cell in notebook['cells']:
+                if cell['cell_type'] == 'code':
+                    exec(compile(''.join(cell['source']), str(path), 'exec'), namespace)
+            np.testing.assert_allclose(namespace['transit_depth'][1:] / namespace['transit_depth'][:-1], [4, 4])
+            assert namespace['planets']['radius'].unit == units.R_earth
+            assert namespace['planets'].meta['origin'].startswith('Synthetic')
+            assert namespace['planets']['depth_ppm'].info.format == '.3g'
+            np.testing.assert_allclose(namespace['elapsed_hours'].to_value(units.hour), [0, 76.8, 153.6])
+            assert namespace['reference_epoch'].scale == 'tdb'
+            assert namespace['schedule']['elapsed'].info.format == '.1f'
+            assert namespace['leap_interval'].to_value(units.s) == pytest.approx(2, abs=1e-8)
+            axis = namespace['axis']
+            np.testing.assert_allclose(axis.lines[0].get_ydata(), namespace['depth_grid_ppm'])
+            np.testing.assert_allclose(axis.collections[0].get_offsets()[:, 0], [1, 2, 4])
+            np.testing.assert_allclose(axis.collections[0].get_offsets()[:, 1], namespace['planets']['depth_ppm'])
+            FigureCanvasAgg(namespace['figure']).draw()
+            assert np.ptp(np.asarray(namespace['figure'].canvas.buffer_rgba())[:, :, :3]) > 0
+    finally:
+        plt.close('all')
 
 
 def test_edited_library_display_cells_compile_and_forward_theme():
