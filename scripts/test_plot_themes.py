@@ -105,6 +105,79 @@ def test_astropy_lesson_quantities_time_and_plot_match_synthetic_inputs(monkeypa
         plt.close('all')
 
 
+def test_scipy_synthetic_fit_covariance_tracks_measurement_errors():
+    path = ROOT / 'ExoCore/Curriculum/Data_Structures/Scipy.ipynb'
+    notebook = json.loads(path.read_text())
+    sources = [''.join(cell['source']) for cell in notebook['cells'] if cell['cell_type'] == 'code']
+    simulation = next(source for source in sources if 'amp1 = 0.04' in source)
+    fitting = next(source for source in sources if 'def double_sine(' in source)
+    namespace = {}
+    try:
+        exec(compile(simulation, str(path), 'exec'), namespace)
+        original_flux = np.asarray(namespace['flux']).copy()
+        exec(compile(fitting, str(path), 'exec'), namespace)
+        estimate = namespace['popt'].copy()
+        covariance = namespace['pcov'].copy()
+        namespace['flux_err'] = 2 * np.asarray(namespace['flux_err'])
+        exec(compile(fitting, str(path), 'exec'), namespace)
+        np.testing.assert_allclose(namespace['popt'], estimate, rtol=1e-6, atol=1e-9)
+        np.testing.assert_allclose(namespace['pcov'], 4 * covariance, rtol=1e-5, atol=1e-10)
+        np.testing.assert_array_equal(namespace['flux'], original_flux)
+    finally:
+        plt.close('all')
+
+
+def test_scipy_both_fits_pass_explicit_measurement_errors():
+    path = ROOT / 'ExoCore/Curriculum/Data_Structures/Scipy.ipynb'
+    notebook = json.loads(path.read_text())
+    fits = []
+    for cell in notebook['cells']:
+        if cell['cell_type'] != 'code':
+            continue
+        for node in ast.walk(ast.parse(''.join(cell['source']))):
+            if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == 'curve_fit':
+                fits.append(node)
+    assert len(fits) == 2
+    for call in fits:
+        keywords = {keyword.arg: keyword.value for keyword in call.keywords}
+        assert isinstance(keywords.get('sigma'), ast.Name)
+        assert keywords['sigma'].id == 'flux_err'
+        assert isinstance(keywords.get('absolute_sigma'), ast.Constant)
+        assert keywords['absolute_sigma'].value is True
+
+
+def test_scipy_bundled_flare_fit_preserves_observed_data_and_plot(monkeypatch):
+    import scipy.optimize
+
+    path = ROOT / 'ExoCore/Curriculum/Data_Structures/Scipy.ipynb'
+    notebook = json.loads(path.read_text())
+    sources = [''.join(cell['source']) for cell in notebook['cells'] if cell['cell_type'] == 'code']
+    inputs = next(source for source in sources if 'import pandas as pd' in source)
+    model = next(source for source in sources if 'def exp_decay(' in source)
+    fitting = next(source for source in sources if 'peak_index = np.argmax' in source)
+    namespace = {'opt': scipy.optimize}
+    monkeypatch.chdir(path.parent)
+    try:
+        exec(compile(inputs, str(path), 'exec'), namespace)
+        original = namespace['data'].copy(deep=True)
+        plt.close('all')
+        exec(compile(model, str(path), 'exec'), namespace)
+        exec(compile(fitting, str(path), 'exec'), namespace)
+        assert np.isfinite(namespace['popt']).all()
+        assert np.isfinite(namespace['pcov']).all()
+        assert np.all(np.diag(namespace['pcov']) > 0)
+        assert namespace['popt'][1] > 0
+        assert namespace['time'][0] == 0
+        assert namespace['data'].equals(original)
+        axis = plt.gca()
+        np.testing.assert_allclose(axis.lines[0].get_xdata(), namespace['time'])
+        np.testing.assert_allclose(axis.lines[0].get_ydata(), namespace['rel_flux'])
+        np.testing.assert_allclose(axis.lines[1].get_ydata(),
+                                   namespace['exp_decay'](namespace['time'], *namespace['popt']))
+    finally:
+        plt.close('all')
+
+
 def test_edited_library_display_cells_compile_and_forward_theme():
     checked = 0
     for path in NOTEBOOKS:
