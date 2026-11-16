@@ -1,14 +1,16 @@
 name: exocore
 channels:
-  - defaults
+  - conda-forge
+  - nodefaults
 dependencies:
   - python=3.12
   - astropy=7.2.0
-  - conda-forge::astroquery=0.4.11
+  - astroquery=0.4.11
   - jupyter
   - numpy<2
   - pandas<3
   - scipy=1.16.3
+  - libgfortran5>=14  # older builds have a duplicate LC_RPATH that recent macOS refuses to load
   - pip
   - pip:
     - lightkurve==2.5.1
