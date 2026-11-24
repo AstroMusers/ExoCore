@@ -2,6 +2,7 @@
 ExoCore/Curriculum/Data_Repositories/Data
 ExoCore/Curriculum/Data_Structures/*.csv
 ExoCore/Auxiliary_Files/Data/Data_Repositories/Data
+ExoCore/Curriculum/Data_Analysis_and_Modeling_Software/archive.bin
 
 # Python test script to execute all notebooks
 run_notebooks.py
