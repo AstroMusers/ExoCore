@@ -32,6 +32,7 @@ jobs:
         uses: tj-actions/changed-files@v47.0.6
         with:
           json: true
+          escape_json: false  # value is passed via env, so escaped quotes would break json.loads
           files: |
             **/*.ipynb
       - name: Execute changed notebooks
